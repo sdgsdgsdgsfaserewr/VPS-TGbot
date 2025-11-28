@@ -4,6 +4,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/alexzhang1433/VPS-TGbot/refs/h
 ```
 > 一键部署，轻松管理多个 Telegram 客服机器人
 > 项目运营中心
+- 下面就是修改此版的两个大佬的快捷服务
 - 如自己不想部署，可直接使用本项目快捷服务 [双向托管机器人](https://t.me/tg_multis_bot)或者[LittleDoraemon的双向机器人平台](https://t.me/doraemon_tg_platform_bot)
   
 ## 📖 简介
