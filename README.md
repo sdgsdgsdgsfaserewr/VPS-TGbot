@@ -122,27 +122,28 @@ Group Topic → Bot → User
 |/ub or /unblock|Unblock user|Reply + /ub|/ub 123456789|/ub|
 |/bl or /blocklist|Show |blacklist	–	/bl	|/bl|
 |/uv or /unverify|Remove verification|	Reply + /uv|	/uv 123456789|	/uv|
-Command Examples
 
-Scenario 1: Block a spammer
+### Command Examples
 
+**Scenario 1: Block a spammer**
+```
 User: sends spam
 You: [reply to user message] /b
 Bot: 🚫 User 123456789 has been blocked
+```
 
-
-Scenario 2: View user information
-
+**Scenario 2: View user information**
+```
 You: [reply to user message] /id
 Bot: User Info:
      • ID: 123456789
      • Username: @example
      • Name: Example User
      • Verified: ✅ Yes
+```
 
-
-Scenario 3: Batch management
-
+**Scenario 3: Batch management**
+```
 You: /bl
 Bot: 📋 Blacklist:
      1. @user1 (ID: 111111)
@@ -150,37 +151,43 @@ Bot: 📋 Blacklist:
 
 You: /ub 111111
 Bot: ✅ User 111111 unblocked
+```
 
-👑 Admin Features
+## 👑 Admin Features
 
 Admins (configured in ADMIN_CHANNEL) have:
 
-Feature	Icon	Description	Notes
-User List	👥	View all users across all bots	Supports pagination (15 per page)
-Broadcast	📢	Send announcement to all users	Ideal for maintenance or updates
-Clean Invalid Bots	🗑️	Remove bots with invalid tokens	Requires confirmation
-🔒 Verification System
+| Feature| 	Icon| 	Description| 	Notes| 
+|------|------|------|---------|
+| User List	| 👥	| View all users across all bots	Supports|  pagination (15 per page)
+| Broadcast	| 📢	| Send announcement to all users	Ideal for|  maintenance or updates
+| Clean Invalid Bots| 	🗑️| 	Remove bots with invalid tokens| 	Requires confirmation
+## 🔒 Verification System
 
 To prevent abuse, users must pass verification on first use. Five types supported:
 
-Type	Icon	Description	Example
-Math	🔢	Mixed arithmetic	12 + 5 × 3 = ?
-Number Sequence	📊	Arithmetic/geometric/square sequence	2, 4, 8, 16, ?
-Chinese Q&A	🇨🇳	Basic Chinese knowledge	Capital of China?
-Logic	🧩	Simple reasoning	If A>B and B>C, then?
-Time Q&A	⏰	Basic time knowledge	How many days in a week?
+|Type|	Icon|	Description|	Example|
+|------|------|------|---------|
+|Math	|🔢|	Mixed arithmetic|	12 + 5 × 3 = ?
+|Number Sequence	|📊|	Arithmetic/geometric/square sequence|	`2, 4, 8, 16, ?`|
+|Chinese Q&A	|🇨🇳|	Basic|` Chinese knowledge	Capital of China?`|
+|Logic	|🧩|	Simple reasoning|	`If A>B and B>C, then?`|
+|Time Q&A	|⏰|	Basic time knowledge|	`How many days in a week?`|
 
 ✅ Once verified, users don’t need to verify again.
 
-🛠️ Common Commands
-Service Management
-Action	Command
-Start	systemctl start tg_multi_bot
-Stop	systemctl stop tg_multi_bot
-Restart	systemctl restart tg_multi_bot
-Status	systemctl status tg_multi_bot
-Disable auto-start	systemctl disable tg_multi_bot
-📂 File Structure
+## 🛠️ Common Commands
+### Service Management
+|Action	|Command|
+|------|------|
+|Start|	`systemctl start tg_multi_bot` |
+|Stop|	`systemctl stop tg_multi_bot` |
+|Restart|	`systemctl restart tg_multi_bot` |
+|Status|	`systemctl status tg_multi_bot` |
+|Disable auto-start|	`systemctl disable tg_multi_bot` |
+
+## 📂 File Structure
+```
 /opt/tg_multi_bot/
 ├── host_bot.py          # Main program
 ├── database.py          # Database module
@@ -189,8 +196,9 @@ Disable auto-start	systemctl disable tg_multi_bot
 ├── backup.sh            # Backup script
 ├── venv/                # Python virtual environment
 └── backup_temp/         # Temporary backup directory
+```
 
-❓ FAQ
+### ❓ FAQ
 Q: Invalid Token?
 
 Ensure token is copied correctly
@@ -199,24 +207,27 @@ Make sure bot is not deleted or disabled
 
 Regenerate token via @BotFather
 
-Q: Messages not forwarding?
+### Q: Messages not forwarding?
 
 Direct Mode: Ensure you have sent /start to the bot
 
 Topic Mode: Ensure bot is admin & topic ID is correct
 
-📊 System Requirements
-Item	Requirement
-OS	Ubuntu 20.04+ / Debian 10+
-Python	3.11+
-RAM	Minimum 512MB (1GB recommended)
-Disk	Minimum 1GB free
-Network	Stable internet connection
-🆘 Getting Help
+### 📊 System Requirements
+|Item	|Requirement|
+|------|------|
+|OS	Ubuntu| 20.04+ / Debian 10+
+|Python|	3.11+|
+|RAM|	Minimum 512MB (1GB recommended)|
+|Disk| Minimum 1GB free|
+|Network	Stable internet connection|
 
-📖 See the full documentation (this README)
+### 🆘 Getting Help
 
-🐛 Report Issues
+- 📖 See the full documentation (this README)
+- 
+
+### 🐛 Report Issues
 
 Please include:
 
@@ -226,7 +237,7 @@ Relevant logs
 
 Steps to reproduce
 
-⚠️ Notes
+### ⚠️ Notes
 
 Protect your Bot Token — never share it
 
@@ -238,11 +249,11 @@ Follow Telegram usage policies
 
 Monitor logs regularly for issues
 
-📜 License
+### 📜 License
 
 MIT License — Free to use with copyright notice.
 
-🎯 Version Info
+### 🎯 Version Info
 
 Current Version: v2.0
 
